@@ -1,0 +1,319 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:OPAMP U3
+U 1 1 60B92D52
+P 5600 2800
+F 0 "U3" H 5944 2846 50  0000 L CNN
+F 1 "OPAMP" H 5944 2755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 5600 2800 50  0001 C CNN
+F 3 "~" H 5600 2800 50  0001 C CNN
+	1    5600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R8
+U 1 1 60B94424
+P 4250 2250
+F 0 "R8" H 4318 2296 50  0000 L CNN
+F 1 "1k" H 4318 2205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 4290 2240 50  0001 C CNN
+F 3 "~" H 4250 2250 50  0001 C CNN
+	1    4250 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R9
+U 1 1 60B95AF7
+P 4250 3300
+F 0 "R9" H 4318 3346 50  0000 L CNN
+F 1 "1k" H 4318 3255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 4290 3290 50  0001 C CNN
+F 3 "~" H 4250 3300 50  0001 C CNN
+	1    4250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R10
+U 1 1 60B96211
+P 4250 4350
+F 0 "R10" H 4318 4396 50  0000 L CNN
+F 1 "1k" H 4318 4305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 4290 4340 50  0001 C CNN
+F 3 "~" H 4250 4350 50  0001 C CNN
+	1    4250 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R11
+U 1 1 60B965DA
+P 4250 5500
+F 0 "R11" H 4318 5546 50  0000 L CNN
+F 1 "1k" H 4318 5455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 4290 5490 50  0001 C CNN
+F 3 "~" H 4250 5500 50  0001 C CNN
+	1    4250 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2400 4250 2900
+Wire Wire Line
+	4250 3450 4250 4050
+Wire Wire Line
+	4250 4500 4250 5150
+Wire Wire Line
+	4250 1900 4250 2100
+Wire Wire Line
+	5300 2900 4250 2900
+Connection ~ 4250 2900
+Wire Wire Line
+	4250 2900 4250 3150
+Wire Wire Line
+	5300 4050 4250 4050
+Connection ~ 4250 4050
+Wire Wire Line
+	4250 4050 4250 4200
+Wire Wire Line
+	5300 5150 4250 5150
+Connection ~ 4250 5150
+Wire Wire Line
+	4250 5150 4250 5350
+Wire Wire Line
+	5300 3850 3000 3850
+Wire Wire Line
+	5300 2700 3000 2700
+Wire Wire Line
+	3000 2700 3000 3850
+Wire Wire Line
+	5300 4950 3000 4950
+Wire Wire Line
+	3000 4950 3000 3850
+Connection ~ 3000 3850
+Wire Wire Line
+	3000 3850 2000 3850
+Wire Wire Line
+	5900 5050 6900 5050
+Wire Wire Line
+	5900 2800 7850 2800
+$Comp
+L Device:LED D4
+U 1 1 60B9AC52
+P 8000 2800
+F 0 "D4" H 7993 3017 50  0000 C CNN
+F 1 "D" H 7993 2926 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P5.08mm_Vertical_AnodeUp" H 8000 2800 50  0001 C CNN
+F 3 "~" H 8000 2800 50  0001 C CNN
+	1    8000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 60B9B60A
+P 7400 3950
+F 0 "D3" H 7393 4167 50  0000 C CNN
+F 1 "D" H 7393 4076 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P5.08mm_Vertical_AnodeUp" H 7400 3950 50  0001 C CNN
+F 3 "~" H 7400 3950 50  0001 C CNN
+	1    7400 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 60B9BB37
+P 7050 5050
+F 0 "D2" H 7043 5267 50  0000 C CNN
+F 1 "D" H 7043 5176 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P5.08mm_Vertical_AnodeUp" H 7050 5050 50  0001 C CNN
+F 3 "~" H 7050 5050 50  0001 C CNN
+	1    7050 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R14
+U 1 1 60B9C08D
+P 8600 3150
+F 0 "R14" H 8668 3196 50  0000 L CNN
+F 1 "1k" H 8668 3105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 8640 3140 50  0001 C CNN
+F 3 "~" H 8600 3150 50  0001 C CNN
+	1    8600 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R13
+U 1 1 60B9CB75
+P 7950 4300
+F 0 "R13" H 8018 4346 50  0000 L CNN
+F 1 "1k" H 8018 4255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 7990 4290 50  0001 C CNN
+F 3 "~" H 7950 4300 50  0001 C CNN
+	1    7950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R12
+U 1 1 60B9D6C7
+P 7550 5350
+F 0 "R12" H 7618 5396 50  0000 L CNN
+F 1 "1k" H 7618 5305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 7590 5340 50  0001 C CNN
+F 3 "~" H 7550 5350 50  0001 C CNN
+	1    7550 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3950 7950 3950
+Wire Wire Line
+	7950 3950 7950 4150
+Wire Wire Line
+	7200 5050 7550 5050
+Wire Wire Line
+	7550 5050 7550 5200
+Wire Wire Line
+	7550 5500 7550 5750
+Wire Wire Line
+	8150 2800 8600 2800
+Wire Wire Line
+	8600 2800 8600 3000
+Wire Wire Line
+	5500 3100 5500 3300
+Wire Wire Line
+	5500 4400 5500 4250
+Wire Wire Line
+	5500 5350 5500 5500
+Wire Wire Line
+	5500 2500 6000 2500
+Wire Wire Line
+	6000 2500 6000 2050
+Wire Wire Line
+	6000 2050 6350 2050
+Text GLabel 5350 6900 3    50   Input ~ 0
+GND
+Wire Wire Line
+	4250 5650 4250 6900
+Wire Wire Line
+	5500 5500 5350 5500
+Wire Wire Line
+	5350 5500 5350 6900
+Wire Wire Line
+	7550 5750 5750 5750
+Wire Wire Line
+	5750 5750 5750 6900
+Connection ~ 5350 6900
+Wire Wire Line
+	7950 6250 5950 6250
+Wire Wire Line
+	5950 6250 5950 6900
+Wire Wire Line
+	7950 4450 7950 6250
+Connection ~ 5750 6900
+Wire Wire Line
+	8600 6300 6050 6300
+Wire Wire Line
+	6050 6300 6050 6900
+Wire Wire Line
+	8600 3300 8600 6300
+Connection ~ 5950 6900
+Wire Wire Line
+	5950 6900 6050 6900
+Text HLabel 2000 3850 0    50   Input ~ 0
+GPIO12
+Wire Wire Line
+	7250 3950 5900 3950
+Text Notes 6900 1900 0    50   ~ 0
+5V\n
+Text Notes 6750 3100 0    50   ~ 0
+3.3 V
+Text GLabel 6350 2050 2    50   Input ~ 0
+5V
+Text GLabel 6350 3200 2    50   Input ~ 0
+3.3V
+Wire Wire Line
+	5750 6900 5950 6900
+Wire Wire Line
+	4250 6900 5000 6900
+Text GLabel 4250 1900 1    50   Input ~ 0
+5V
+Wire Wire Line
+	5350 6900 5750 6900
+$Comp
+L pspice:OPAMP U4
+U 1 1 60B9391D
+P 5600 3950
+F 0 "U4" H 5944 3996 50  0000 L CNN
+F 1 "OPAMP" H 5944 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 5600 3950 50  0001 C CNN
+F 3 "~" H 5600 3950 50  0001 C CNN
+	1    5600 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4400 5200 4400
+Wire Wire Line
+	5200 4400 5200 6900
+Connection ~ 5200 6900
+Wire Wire Line
+	5200 6900 5350 6900
+Wire Wire Line
+	5500 3300 5000 3300
+Wire Wire Line
+	5000 3300 5000 6900
+Connection ~ 5000 6900
+Wire Wire Line
+	5000 6900 5200 6900
+$Comp
+L pspice:OPAMP U6
+U 1 1 60B940F5
+P 5600 5050
+F 0 "U6" H 5944 5096 50  0000 L CNN
+F 1 "OPAMP" H 5944 5005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 5600 5050 50  0001 C CNN
+F 3 "~" H 5600 5050 50  0001 C CNN
+	1    5600 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 4100 2    50   Input ~ 0
+3.3V
+$Comp
+L Device:R_US R?
+U 1 1 60BF796A
+P 6100 4250
+AR Path="/60BF796A" Ref="R?"  Part="1" 
+AR Path="/60BE8D90/60BF796A" Ref="R16"  Part="1" 
+F 0 "R16" H 6168 4296 50  0000 L CNN
+F 1 "700" H 6168 4205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 6140 4240 50  0001 C CNN
+F 3 "~" H 6100 4250 50  0001 C CNN
+	1    6100 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4100 6100 4100
+Wire Wire Line
+	5500 3650 5500 3450
+Wire Wire Line
+	5500 3450 5700 3450
+Wire Wire Line
+	5700 3450 5700 3200
+Wire Wire Line
+	5700 3200 6350 3200
+Wire Wire Line
+	6100 4550 5500 4550
+Wire Wire Line
+	5500 4550 5500 4750
+Wire Wire Line
+	6100 4400 6100 4550
+$EndSCHEMATC
