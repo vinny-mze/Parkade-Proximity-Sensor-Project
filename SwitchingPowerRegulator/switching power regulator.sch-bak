@@ -1,0 +1,264 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4xxx:LT1082CQPBF U1
+U 1 1 60B94330
+P 5800 4500
+F 0 "U1" H 6900 4865 50  0000 C CNN
+F 1 "LT1082CQPBF" H 6900 4774 50  0000 C CNN
+F 2 "4xxx:LT1082" H 5800 4500 50  0001 L BNN
+F 3 "" H 5800 4500 50  0001 L BNN
+F 4 "Linear Technology" H 5800 4500 50  0001 L BNN "VENDOR"
+F 5 "lt1082cq#pbf" H 5800 4500 50  0001 L BNN "MANUFACTURER_PART_NUMBER"
+	1    5800 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60B961E9
+P 6800 5250
+F 0 "C3" H 6915 5296 50  0000 L CNN
+F 1 "0.01µ" H 6915 5205 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal" H 6838 5100 50  0001 C CNN
+F 3 "~" H 6800 5250 50  0001 C CNN
+	1    6800 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 60B978AC
+P 6350 5350
+F 0 "C2" H 6465 5396 50  0000 L CNN
+F 1 "0.22µ" H 6465 5305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal" H 6388 5200 50  0001 C CNN
+F 3 "~" H 6350 5350 50  0001 C CNN
+	1    6350 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 60B98525
+P 6350 4950
+F 0 "R1" H 6418 4996 50  0000 L CNN
+F 1 "4.7k" H 6418 4905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 6390 4940 50  0001 C CNN
+F 3 "~" H 6350 4950 50  0001 C CNN
+	1    6350 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5500 6350 5650
+Connection ~ 6350 5650
+Wire Wire Line
+	6350 5650 6800 5650
+Wire Wire Line
+	6800 5400 6800 5650
+Connection ~ 6800 5650
+Wire Wire Line
+	6800 5650 7100 5650
+Wire Wire Line
+	6350 5100 6350 5200
+$Comp
+L Device:R_US R3
+U 1 1 60B9B4FF
+P 7100 5250
+F 0 "R3" H 7168 5296 50  0000 L CNN
+F 1 "1.1k" H 7168 5205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 7140 5240 50  0001 C CNN
+F 3 "~" H 7100 5250 50  0001 C CNN
+	1    7100 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5400 7100 5650
+Wire Wire Line
+	3100 5650 3500 5650
+Wire Wire Line
+	6800 4500 6350 4500
+Wire Wire Line
+	6800 4500 6800 5100
+Wire Wire Line
+	6350 4800 6350 4500
+Connection ~ 6350 4500
+Wire Wire Line
+	6350 4500 5800 4500
+Wire Wire Line
+	7100 5100 7100 4400
+Wire Wire Line
+	7100 4400 7050 4400
+Wire Wire Line
+	5800 4300 6000 4300
+Wire Wire Line
+	6000 4300 6000 5650
+Connection ~ 6000 5650
+Wire Wire Line
+	6000 5650 6350 5650
+$Comp
+L Device:Q_PNP_BCE Q1
+U 1 1 60B9FCB2
+P 7150 4100
+F 0 "Q1" H 7341 4054 50  0000 L CNN
+F 1 "PNP" H 7341 4145 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7350 4200 50  0001 C CNN
+F 3 "~" H 7150 4100 50  0001 C CNN
+	1    7150 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7050 4300 7050 4400
+Connection ~ 7050 4400
+Wire Wire Line
+	7050 4400 5800 4400
+$Comp
+L Device:R_US R2
+U 1 1 60BA1532
+P 6650 3800
+F 0 "R2" V 6445 3800 50  0000 C CNN
+F 1 "2k" V 6536 3800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 6690 3790 50  0001 C CNN
+F 3 "~" H 6650 3800 50  0001 C CNN
+	1    6650 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 3800 7050 3800
+Wire Wire Line
+	7050 3800 7050 3900
+Wire Wire Line
+	6500 3800 6350 3800
+Wire Wire Line
+	6350 3800 6350 3350
+$Comp
+L Device:C C4
+U 1 1 60BA234D
+P 7550 3750
+F 0 "C4" H 7665 3796 50  0000 L CNN
+F 1 "470µ" H 7665 3705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal" H 7588 3600 50  0001 C CNN
+F 3 "~" H 7550 3750 50  0001 C CNN
+	1    7550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3900 7550 4100
+Wire Wire Line
+	7550 4100 7350 4100
+Connection ~ 7550 4100
+Wire Wire Line
+	6350 3350 7550 3350
+Wire Wire Line
+	7550 3600 7550 3350
+Connection ~ 7550 3350
+Wire Wire Line
+	7550 3350 8350 3350
+$Comp
+L pspice:DIODE D1
+U 1 1 60BA4B5E
+P 6050 3350
+F 0 "D1" H 6050 3615 50  0000 C CNN
+F 1 "D" H 6050 3524 50  0000 C CNN
+F 2 "Diode_THT:D_A-405_P5.08mm_Vertical_AnodeUp" H 6050 3350 50  0001 C CNN
+F 3 "~" H 6050 3350 50  0001 C CNN
+	1    6050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3350 6250 3350
+Connection ~ 6350 3350
+Wire Wire Line
+	5850 3350 5550 3350
+Wire Wire Line
+	3600 4300 3600 3800
+Wire Wire Line
+	3600 3800 5550 3800
+Wire Wire Line
+	5550 3800 5550 3350
+Wire Wire Line
+	5550 3350 5400 3350
+Connection ~ 5550 3350
+Wire Wire Line
+	3150 3350 3150 3600
+Wire Wire Line
+	3600 4400 3300 4400
+Wire Wire Line
+	3300 4400 3300 4850
+$Comp
+L Device:C C1
+U 1 1 60BA9BF0
+P 2950 4650
+F 0 "C1" H 3065 4696 50  0000 L CNN
+F 1 "33µ" H 3065 4605 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal" H 2988 4500 50  0001 C CNN
+F 3 "~" H 2950 4650 50  0001 C CNN
+	1    2950 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3350 3400 4250
+Wire Wire Line
+	3400 4250 2950 4250
+Wire Wire Line
+	2950 4250 2950 4500
+Wire Wire Line
+	3400 3350 3150 3350
+Wire Wire Line
+	2950 4800 2950 5500
+Wire Wire Line
+	2950 5500 3500 5500
+Wire Wire Line
+	3500 5500 3500 5650
+Connection ~ 3500 5650
+Wire Wire Line
+	3500 5650 6000 5650
+Text Notes 8050 3300 0    50   ~ 0
+V(out)
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 60BB7A70
+P 5150 3350
+F 0 "L1" H 5150 3565 50  0000 C CNN
+F 1 "250µ" H 5150 3474 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L5.3mm_D2.2mm_P10.16mm_Horizontal_Vishay_IM-1" H 5150 3350 50  0001 C CNN
+F 3 "~" H 5150 3350 50  0001 C CNN
+	1    5150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3350 3400 3350
+Connection ~ 3400 3350
+NoConn ~ 3600 4500
+Text GLabel 1800 5050 0    50   Input ~ 0
+GND
+Wire Wire Line
+	3150 3600 1950 3600
+Wire Wire Line
+	7550 6000 1950 6000
+Wire Wire Line
+	7550 4100 7550 6000
+Wire Wire Line
+	1950 3600 1950 5050
+Wire Wire Line
+	1800 5050 1950 5050
+Connection ~ 1950 5050
+Wire Wire Line
+	1950 5050 1950 6000
+Text GLabel 8350 3350 2    50   Input ~ 0
+V(out_spr)
+Text GLabel 3300 4850 3    50   Input ~ 0
+5V
+Text GLabel 3100 5650 3    50   Input ~ 0
+5V
+$EndSCHEMATC
